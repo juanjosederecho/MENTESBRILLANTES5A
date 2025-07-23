@@ -1,0 +1,53 @@
+{
+  "name": "Mentes Brillantes - Plataforma Educativa",
+  "short_name": "Mentes Brillantes",
+  "description": "Plataforma educativa del Colegio Conamir Rosaspata donde estudiantes pueden explorar y compartir videojuegos educativos",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es",
+  "categories": ["education", "games", "productivity"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzQjgyRjYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4QjVDRjYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgZmlsbD0idXJsKCNhKSIgcng9IjI0Ii8+PGNpcmNsZSBjeD0iOTYiIGN5PSI3NiIgcj0iMjQiIGZpbGw9IndoaXRlIi8+PHJlY3QgeD0iNDgiIHk9IjExNiIgd2lkdGg9Ijk2IiBoZWlnaHQ9IjE2IiByeD0iOCIgZmlsbD0id2hpdGUiLz48cmVjdCB4PSI2NCIgeT0iMTQ0IiB3aWR0aD0iNjQiIGhlaWdodD0iMTIiIHJ4PSI2IiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzQjgyRjYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4QjVDRjYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNhKSIgcng9IjY0Ii8+PGNpcmNsZSBjeD0iMjU2IiBjeT0iMjA0IiByPSI2NCIgZmlsbD0id2hpdGUiLz48cmVjdCB4PSIxMjgiIHk9IjMxMiIgd2lkdGg9IjI1NiIgaGVpZ2h0PSI0MiIgcng9IjIxIiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHg9IjE3MSIgeT0iMzg0IiB3aWR0aD0iMTcwIiBoZWlnaHQ9IjMyIiByeD0iMTYiIGZpbGw9IndoaXRlIi8+PC9zdmc+",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Subir Juego",
+      "short_name": "Subir",
+      "description": "Sube un nuevo juego educativo",
+      "url": "/#subir-juego",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTIgNFY0QzEyIDQgMTIgNCA5IDRIMTJaIiBzdHJva2U9IiMzQjgyRjYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTEyIDRWMjAiIHN0cm9rZT0iIzNCODJGNiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cGF0aCBkPSJNOCA4TDEyIDRMMTYgOCIgc3Ryb2tlPSIjM0I4MkY2IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Ver Juegos",
+      "short_name": "Juegos",
+      "description": "Explora juegos educativos",
+      "url": "/#juegos",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNiAxNEg0QTIgMiAwIDAgMSAyIDEyVjhBMiAyIDAgMCAxIDQgNkg2VjE0WiIgZmlsbD0iIzNCODJGNiIvPjxwYXRoIGQ9Ik0xOCAxNEgyMEEyIDIgMCAwIDAgMjIgMTJWOEEyIDIgMCAwIDAgMjAgNkgxOFYxNFoiIGZpbGw9IiMzQjgyRjYiLz48cmVjdCB4PSI2IiB5PSI2IiB3aWR0aD0iMTIiIGhlaWdodD0iOCIgZmlsbD0iIzNCODJGNiIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMTAiIHI9IjEiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iOCIgY3k9IjEwIiByPSIxIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}

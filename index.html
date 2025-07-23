@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentes Brillantes - Plataforma Educativa</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3B82F6">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="min-h-screen transition-all duration-300" style="background: var(--bg-primary)"></body>
+<!-- Navigation -->
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-blue-600">Mentes Brillantes</h1>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#inicio" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Inicio</a>
+                <a href="#subir-juego" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Subir
+                    Juego</a>
+                <a href="#juegos" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Juegos</a>
+                <a href="#equipo" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Equipo</a>
+                <a href="#proyecto" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Proyecto</a>
+                <a href="#descarga" class="nav-link text-gray-700 hover:text-blue-600 transition-colors">Descarga</a>
+
+                <!-- Theme Selector -->
+                <div class="flex items-center space-x-2">
+                    <button id="theme-light" class="theme-btn p-2 rounded-lg transition-all duration-300"
+                        title="Modo Claro">
+                        <i class="fas fa-sun text-lg"></i>
+                    </button>
+                    <button id="theme-dark" class="theme-btn p-2 rounded-lg transition-all duration-300"
+                        title="Modo Oscuro">
+                        <i class="fas fa-moon text-lg"></i>
+                    </button>
+                    <button id="theme-pink" class="theme-btn p-2 rounded-lg transition-all duration-300"
+                        title="Modo Rosa">
+                        <i class="fas fa-heart text-lg"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="md:hidden flex items-center space-x-4">
+                <!-- Mobile Theme Selector -->
+                <div class="flex items-center space-x-1">
+                    <button id="mobile-theme-light" class="theme-btn p-2 rounded-lg transition-all duration-300"
+                        title="Modo Claro">
+                        <i class="fas fa-sun text-sm"></i>
+                    </button>
+                    <button id="mobile-theme-dark" class="theme-btn p-2 rounded-lg transition-all duration-300"
+                        title="Modo Oscuro">
+                        <i class="fas fa-moon text-sm"></i>
+                    </button>
+                    <button id="mobile-theme-pink" class="theme-btn p-2 rounded-lg transition-all duration-300"
+                        title="Modo Rosa">
+                        <i class="fas fa-heart text-sm"></i>
+                    </button>
+                </div>
+                <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="#inicio" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Inicio</a>
+            <a href="#subir-juego" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Subir Juego</a>
+            <a href="#juegos" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Juegos</a>
+            <a href="#equipo" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Equipo</a>
+            <a href="#proyecto" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Proyecto</a>
+            <a href="#descarga" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Descarga</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main>
+    <!-- Página de Inicio -->
+    <section id="inicio" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+                    <span class="text-blue-600">Mentes</span>
+                    <span class="text-purple-600">Brillantes</span>
+                </h1>
+                <p class="text-2xl md:text-3xl text-gray-600 font-medium mb-8">
+                    "Donde el juego enseña y el futuro empieza"
+                </p>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-12">
+                    Plataforma educativa del Colegio Conamir Rosaspata donde estudiantes pueden explorar
+                    y compartir videojuegos educativos organizados por áreas académicas.
+                </p>
+            </div>
+
+            <!-- Subject Cards -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mb-16">
+                <div
+                    class="subject-card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="text-3xl mb-2">🧮</div>
+                    <h3 class="font-semibold text-gray-800 text-sm">Matemática</h3>
+                </div>
+                <div
+                    class="subject-card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="text-3xl mb-2">📚</div>
+                    <h3 class="font-semibold text-gray-800 text-sm">Comunicación</h3>
+                </div>
+                <div
+                    class="subject-card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="text-3xl mb-2">🏛️</div>
+                    <h3 class="font-semibold text-gray-800 text-sm">Historia del Perú</h3>
+                </div>
+                <div
+                    class="subject-card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="text-3xl mb-2">🌍</div>
+                    <h3 class="font-semibold text-gray-800 text-sm">Geografía</h3>
+                </div>
+                <div
+                    class="subject-card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="text-3xl mb-2">⚗️</div>
+                    <h3 class="font-semibold text-gray-800 text-sm">Química</h3>
+                </div>
+                <div
+                    class="subject-card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="text-3xl mb-2">🧬</div>
+                    <h3 class="font-semibold text-gray-800 text-sm">Biología</h3>
+                </div>
+                <div
+                    class="subject-card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="text-3xl mb-2">⚛️</div>
+                    <h3 class="font-semibold text-gray-800 text-sm">Física</h3>
+                </div>
+                <div
+                    class="subject-card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="text-3xl mb-2">🤝</div>
+                    <h3 class="font-semibold text-gray-800 text-sm">Tutoría</h3>
+                </div>
+                <div
+                    class="subject-card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="text-3xl mb-2">🔧</div>
+                    <h3 class="font-semibold text-gray-800 text-sm">Educación para el Trabajo</h3>
+                </div>
+                <div
+                    class="subject-card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="text-3xl mb-2">🇺🇸</div>
+                    <h3 class="font-semibold text-gray-800 text-sm">Inglés</h3>
+                </div>
+                <div
+                    class="subject-card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="text-3xl mb-2">🎨</div>
+                    <h3 class="font-semibold text-gray-800 text-sm">Arte</h3>
+                </div>
+                <div
+                    class="subject-card bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="text-3xl mb-2">⚽</div>
+                    <h3 class="font-semibold text-gray-800 text-sm">Educación Física</h3>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#juegos"
+                    class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg">
+                    <i class="fas fa-gamepad mr-2"></i>
+                    Explorar Juegos
+                </a>
+                <a href="#subir-juego"
+                    class="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg">
+                    <i class="fas fa-upload mr-2"></i>
+                    Subir Juego
+                </a>
+            </div>
+        </div>
+    </section>
+    <! -- Subir Juego -->
+        <section id="subir-juego" class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Subir Nuevo Juego</h2>
+                    <p class="text-lg text-gray-600">Comparte tu juego educativo con la comunidad</p>
+                </div>
+
+                <form id="game-form" class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="md:col-span-2">
+                            <label for="game-title" class="block text-sm font-medium text-gray-700 mb-2">
+                                Título del Juego *
+                            </label>
+                            <input type="text" id="game-title" name="title" required
+                                class="w-full px-4 py-3 border-2 border-gray-400 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 bg-white text-gray-900 font-medium placeholder-gray-600">
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <label for="game-description" class="block text-sm font-medium text-gray-700 mb-2">
+                                Descripción Breve *
+                            </label>
+                            <textarea id="game-description" name="description" rows="3" required
+                                class="w-full px-4 py-3 border-2 border-gray-400 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 bg-white text-gray-900 font-medium placeholder-gray-600"
+                                placeholder="Describe brevemente de qué trata el juego..."></textarea>
+                        </div>
+
+                        <div>
+                            <label for="game-subject" class="block text-sm font-medium text-gray-700 mb-2">
+                                Área o Materia *
+                            </label>
+                            <select id="game-subject" name="subject" required
+                                class="w-full px-4 py-3 border-2 border-gray-400 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 bg-white text-gray-900 font-medium">
+                                <option value="">Selecciona una materia</option>
+                                <option value="Matemática">Matemática</option>
+                                <option value="Comunicación">Comunicación</option>
+                                <option value="Historia del Perú">Historia del Perú</option>
+                                <option value="Geografía">Geografía</option>
+                                <option value="Química">Química</option>
+                                <option value="Biología">Biología</option>
+                                <option value="Física">Física</option>
+                                <option value="Tutoría">Tutoría</option>
+                                <option value="Educación para el Trabajo">Educación para el Trabajo</option>
+                                <option value="Inglés">Inglés</option>
+                                <option value="Arte">Arte</option>
+                                <option value="Educación Física">Educación Física</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="game-url" class="block text-sm font-medium text-gray-700 mb-2">
+                                Enlace del Juego *
+                            </label>
+                            <input type="url" id="game-url" name="url" required
+                                class="w-full px-4 py-3 border-2 border-gray-400 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 bg-white text-gray-900 font-medium placeholder-gray-600"
+                                placeholder="https://...">
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <label for="game-image" class="block text-sm font-medium text-gray-700 mb-2">
+                                Miniatura del Juego *
+                            </label>
+                            <div
+                                class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg hover:border-blue-400 transition-colors">
+                                <div class="space-y-1 text-center">
+                                    <div id="image-preview" class="hidden mb-4">
+                                        <img id="preview-img" src="" alt="Preview"
+                                            class="mx-auto h-32 w-auto rounded-lg">
+                                    </div>
+                                    <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none"
+                                        viewBox="0 0 48 48">
+                                        <path
+                                            d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <div class="flex text-sm text-gray-600">
+                                        <label for="game-image"
+                                            class="relative cursor-pointer bg-white rounded-md font-medium text-blue-600 hover:text-blue-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-blue-500">
+                                            <span>Subir imagen</span>
+                                            <input id="game-image" name="image" type="file" class="sr-only"
+                                                accept="image/*" required>
+                                        </label>
+                                        <p class="pl-1">o arrastra y suelta</p>
+                                    </div>
+                                    <p class="text-xs text-gray-500">PNG, JPG, GIF hasta 10MB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <button type="submit"
+                            class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-lg">
+                            <i class="fas fa-upload mr-2"></i>
+                            Subir Juego
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Juegos por Área -->
+        <section id="juegos" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Juegos Educativos</h2>
+                    <p class="text-lg text-gray-600 mb-4">Explora nuestra colección de juegos organizados por materia
+                    </p>
+                    <div class="flex gap-2 justify-center">
+                        <button onclick="forceLoadGames()"
+                            class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                            <i class="fas fa-sync-alt mr-2"></i>
+                            Cargar Juegos
+                        </button>
+                        <button onclick="displayGames()"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                            <i class="fas fa-eye mr-2"></i>
+                            Mostrar
+                        </button>
+                        <button onclick="console.log('Games:', games.length, games)"
+                            class="bg-gray-600 hover:bg-gray-700 text-white px-3 py-2 rounded-lg font-medium transition-colors">
+                            <i class="fas fa-bug mr-1"></i>
+                            Debug
+                        </button>
+                        <button onclick="clearAllGames()"
+                            class="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-lg font-medium transition-colors">
+                            <i class="fas fa-trash-alt mr-1"></i>
+                            Limpiar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Filters -->
+                <div class="mb-8 flex flex-col sm:flex-row gap-4 justify-between items-center">
+                    <div class="flex flex-wrap gap-2">
+                        <button class="filter-btn active px-4 py-2 rounded-full bg-emerald-600 text-white font-medium"
+                            data-filter="all">
+                            Todos
+                        </button>
+                        <button
+                            class="filter-btn px-3 py-2 rounded-full bg-white text-gray-800 font-medium hover:bg-emerald-50 border-2 border-gray-300 text-sm"
+                            data-filter="Matemática">
+                            Matemática
+                        </button>
+                        <button
+                            class="filter-btn px-3 py-2 rounded-full bg-white text-gray-800 font-medium hover:bg-emerald-50 border-2 border-gray-300 text-sm"
+                            data-filter="Comunicación">
+                            Comunicación
+                        </button>
+                        <button
+                            class="filter-btn px-3 py-2 rounded-full bg-white text-gray-800 font-medium hover:bg-emerald-50 border-2 border-gray-300 text-sm"
+                            data-filter="Historia del Perú">
+                            Historia
+                        </button>
+                        <button
+                            class="filter-btn px-3 py-2 rounded-full bg-white text-gray-800 font-medium hover:bg-emerald-50 border-2 border-gray-300 text-sm"
+                            data-filter="Geografía">
+                            Geografía
+                        </button>
+                        <button
+                            class="filter-btn px-3 py-2 rounded-full bg-white text-gray-800 font-medium hover:bg-emerald-50 border-2 border-gray-300 text-sm"
+                            data-filter="Química">
+                            Química
+                        </button>
+                        <button
+                            class="filter-btn px-3 py-2 rounded-full bg-white text-gray-800 font-medium hover:bg-emerald-50 border-2 border-gray-300 text-sm"
+                            data-filter="Biología">
+                            Biología
+                        </button>
+                        <button
+                            class="filter-btn px-3 py-2 rounded-full bg-white text-gray-800 font-medium hover:bg-emerald-50 border-2 border-gray-300 text-sm"
+                            data-filter="Física">
+                            Física
+                        </button>
+                        <button
+                            class="filter-btn px-3 py-2 rounded-full bg-white text-gray-800 font-medium hover:bg-emerald-50 border-2 border-gray-300 text-sm"
+                            data-filter="Inglés">
+                            Inglés
+                        </button>
+                        <button
+                            class="filter-btn px-3 py-2 rounded-full bg-white text-gray-800 font-medium hover:bg-emerald-50 border-2 border-gray-300 text-sm"
+                            data-filter="Arte">
+                            Arte
+                        </button>
+                    </div>
+
+                    <div class="relative">
+                        <input type="text" id="search-games" placeholder="Buscar juegos..."
+                            class="pl-10 pr-4 py-2 border-2 border-gray-400 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 bg-white text-gray-900 font-medium placeholder-gray-600">
+                        <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                    </div>
+                </div>
+
+                <!-- Games Grid -->
+                <div id="games-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Games will be loaded here -->
+                </div>
+
+                <!-- No games message -->
+                <div id="no-games" class="hidden text-center py-12">
+                    <div class="text-6xl mb-4">🎮</div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">No se encontraron juegos</h3>
+                    <p class="text-gray-500 mb-4">Intenta con otros filtros o sube el primer juego</p>
+                    <button onclick="loadExampleGames(); displayGames();"
+                        class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                        <i class="fas fa-refresh mr-2"></i>
+                        Cargar Juegos de Ejemplo
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Integrantes del Equipo -->
+        <section id="equipo" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Nuestro Equipo</h2>
+                    <p class="text-lg text-gray-600">Conoce a los integrantes de Mentes Brillantes</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Marketing Team -->
+                    <div
+                        class="team-card bg-gradient-to-br from-pink-50 to-red-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-bullhorn text-white text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-1">NELSON</h3>
+                            <p class="text-pink-600 font-medium">Gerencia de Marketing</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="team-card bg-gradient-to-br from-pink-50 to-red-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-bullhorn text-white text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-1">REYNA</h3>
+                            <p class="text-pink-600 font-medium">Gerencia de Marketing</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="team-card bg-gradient-to-br from-pink-50 to-red-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-bullhorn text-white text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-1">CLARA</h3>
+                            <p class="text-pink-600 font-medium">Gerencia de Marketing</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="team-card bg-gradient-to-br from-pink-50 to-red-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-bullhorn text-white text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-1">BRAYAN</h3>
+                            <p class="text-pink-600 font-medium">Gerencia de Marketing</p>
+                        </div>
+                    </div>
+
+                    <!-- Research Team -->
+                    <div
+                        class="team-card bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-microscope text-white text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-1">EDU</h3>
+                            <p class="text-blue-600 font-medium">Gerencia de Investigación</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="team-card bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-microscope text-white text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-1">GELSON</h3>
+                            <p class="text-blue-600 font-medium">Gerencia de Investigación</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="team-card bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-microscope text-white text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-1">KEVIN</h3>
+                            <p class="text-blue-600 font-medium">Gerencia de Investigación</p>
+                        </div>
+                    </div>
+
+                    <!-- Finance Team -->
+                    <div
+                        class="team-card bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-chart-line text-white text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-1">ALMER</h3>
+                            <p class="text-green-600 font-medium">Gerencia de Finanzas</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="team-card bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-chart-line text-white text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-1">NELY</h3>
+                            <p class="text-green-600 font-medium">Gerencia de Finanzas</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="team-card bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-chart-line text-white text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-1">MARY LUZ</h3>
+                            <p class="text-green-600 font-medium">Gerencia de Finanzas</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="team-card bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-chart-line text-white text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-1">VILMA</h3>
+                            <p class="text-green-600 font-medium">Gerencia de Finanzas</p>
+                        </div>
+                    </div>
+
+                    <!-- Design Team -->
+                    <div
+                        class="team-card bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-palette text-white text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-1">ELIZABETH</h3>
+                            <p class="text-purple-600 font-medium">Gerencia de Diseño</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="team-card bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-palette text-white text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-1">EDDY</h3>
+                            <p class="text-purple-600 font-medium">Gerencia de Diseño</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="team-card bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="text-center">
+                            <div
+                                class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-palette text-white text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-1">LIZETH</h3>
+                            <p class="text-purple-600 font-medium">Gerencia de Diseño</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sobre el Proyecto -->
+        <section id="proyecto" class="py-20 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Sobre el Proyecto</h2>
+                    <p class="text-lg text-gray-600">Conoce más sobre nuestra iniciativa educativa</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-blue-600 mb-4 flex items-center">
+                                <i class="fas fa-lightbulb mr-3"></i>
+                                ¿Por qué creamos esta plataforma?
+                            </h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                En el Colegio Conamir Rosaspata, identificamos la necesidad de crear un espacio
+                                digital
+                                donde los estudiantes puedan acceder fácilmente a recursos educativos interactivos.
+                                Nuestra plataforma nace de la visión de transformar la educación tradicional
+                                mediante
+                                el uso de tecnología y gamificación, creando un ambiente de aprendizaje más dinámico
+                                y atractivo para las nuevas generaciones.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-purple-600 mb-4 flex items-center">
+                                <i class="fas fa-target mr-3"></i>
+                                ¿Qué necesidad educativa buscamos resolver?
+                            </h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Observamos que muchos estudiantes encuentran dificultades para mantener el interés
+                                en materias académicas tradicionales. Nuestra plataforma busca resolver la falta de
+                                recursos educativos interactivos organizados, la dificultad para encontrar material
+                                didáctico apropiado por materia, y la necesidad de crear un espacio colaborativo
+                                donde estudiantes y docentes puedan compartir y descubrir herramientas educativas
+                                innovadoras de manera sencilla y accesible.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-green-600 mb-4 flex items-center">
+                                <i class="fas fa-gamepad mr-3"></i>
+                                ¿Cómo los juegos mejoran el aprendizaje?
+                            </h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Los videojuegos educativos transforman el proceso de aprendizaje al hacerlo más
+                                interactivo y motivador. A través del juego, los estudiantes desarrollan habilidades
+                                de resolución de problemas, pensamiento crítico y trabajo en equipo. La gamificación
+                                permite que conceptos complejos se vuelvan más comprensibles y memorables, mientras
+                                que la retroalimentación inmediata ayuda a reforzar el conocimiento. Además, los
+                                juegos fomentan la participación activa y reducen la ansiedad asociada con el
+                                aprendizaje tradicional, creando un ambiente donde los errores se ven como
+                                oportunidades de mejora.
+                            </p>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-6">
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Nuestro Compromiso</h4>
+                            <p class="text-gray-700">
+                                Como equipo "Mentes Brillantes", nos comprometemos a mantener esta plataforma
+                                actualizada, segura y accesible para toda la comunidad educativa del Colegio
+                                Conamir Rosaspata y más allá. Creemos firmemente que "donde el juego enseña,
+                                el futuro empieza".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QR y Descarga -->
+        <section id="descarga" class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Descarga y Comparte</h2>
+                    <p class="text-lg text-gray-600">Accede a nuestra plataforma desde cualquier dispositivo</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- QR Code -->
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 text-center shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Código QR</h3>
+                        <div class="bg-white p-6 rounded-lg shadow-inner mb-6">
+                            <div id="qr-code" class="flex justify-center">
+                                <!-- QR Code will be generated here -->
+                                <div class="w-48 h-48 bg-gray-200 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-qrcode text-6xl text-gray-400"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">Escanea este código con tu móvil para acceder rápidamente</p>
+                        <button id="generate-qr"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                            <i class="fas fa-sync-alt mr-2"></i>
+                            Generar QR
+                        </button>
+                    </div>
+
+                    <!-- Download Options -->
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 text-center shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Descargar App</h3>
+                        <div class="space-y-4 mb-6">
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fab fa-android text-3xl text-emerald-600 mb-2"></i>
+                                <p class="font-semibold">Descarga APK</p>
+                                <p class="text-sm text-gray-600">Obtén los archivos de la aplicación</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-mobile-alt text-3xl text-purple-600 mb-2"></i>
+                                <p class="font-semibold">Instalación APK</p>
+                                <p class="text-sm text-gray-600">Instala directamente en tu dispositivo</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <button id="download-apk"
+                                class="w-full bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-4 rounded-lg font-semibold transition-colors shadow-lg transform hover:scale-105">
+                                <i class="fab fa-android mr-2 text-xl"></i>
+                                Descargar APK
+                            </button>
+                            <button id="install-apk"
+                                class="w-full bg-purple-600 hover:bg-purple-700 text-white px-6 py-4 rounded-lg font-semibold transition-colors shadow-lg transform hover:scale-105">
+                                <i class="fas fa-mobile-alt mr-2 text-xl"></i>
+                                Instalar APK
+                            </button>
+                            <div class="text-center mt-4">
+                                <p class="text-sm text-gray-600 mb-3">
+                                    <i class="fas fa-info-circle mr-1"></i>
+                                    Descarga e instala la app para usar sin conexión
+                                </p>
+                                <div class="bg-gray-100 rounded-lg p-3 text-xs text-gray-700 mb-3">
+                                    <p class="mb-1"><strong>Descargar APK:</strong> Obtén los archivos de la aplicación
+                                    </p>
+                                    <p><strong>Instalar APK:</strong> Instala directamente en tu dispositivo</p>
+                                </div>
+                                <div class="flex gap-2 justify-center">
+                                    <button onclick="downloadAPK()"
+                                        class="text-xs bg-emerald-200 hover:bg-emerald-300 text-emerald-700 px-3 py-1 rounded transition-colors">
+                                        <i class="fas fa-download mr-1"></i>
+                                        Probar Descarga
+                                    </button>
+                                    <button onclick="changeTheme('dark')"
+                                        class="text-xs bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1 rounded transition-colors">
+                                        <i class="fas fa-moon mr-1"></i>
+                                        Probar Tema
+                                    </button>
+                                    <button onclick="loadExampleGames(); displayGames();"
+                                        class="text-xs bg-blue-200 hover:bg-blue-300 text-blue-700 px-3 py-1 rounded transition-colors">
+                                        <i class="fas fa-gamepad mr-1"></i>
+                                        Cargar Juegos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Share Section -->
+                <div class="mt-12 text-center">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Comparte con tus amigos</h3>
+                    <div class="flex justify-center space-x-4">
+                        <button
+                            class="share-btn bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full transition-colors"
+                            data-platform="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button
+                            class="share-btn bg-blue-400 hover:bg-blue-500 text-white p-3 rounded-full transition-colors"
+                            data-platform="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button
+                            class="share-btn bg-green-600 hover:bg-green-700 text-white p-3 rounded-full transition-colors"
+                            data-platform="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                        <button
+                            class="share-btn bg-gray-600 hover:bg-gray-700 text-white p-3 rounded-full transition-colors"
+                            data-platform="copy">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Mentes Brillantes</h3>
+                <p class="text-gray-300 mb-4">"Donde el juego enseña y el futuro empieza"</p>
+                <p class="text-gray-400">Colegio Conamir Rosaspata</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Enlaces Rápidos</h4>
+                <ul class="space-y-2">
+                    <li><a href="#inicio" class="text-gray-300 hover:text-white transition-colors">Inicio</a></li>
+                    <li><a href="#subir-juego" class="text-gray-300 hover:text-white transition-colors">Subir
+                            Juego</a></li>
+                    <li><a href="#juegos" class="text-gray-300 hover:text-white transition-colors">Juegos</a></li>
+                    <li><a href="#equipo" class="text-gray-300 hover:text-white transition-colors">Equipo</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                <p class="text-gray-300 mb-2">
+                    <i class="fas fa-envelope mr-2"></i>
+                    mentesbrillantes@conamir.edu.pe
+                </p>
+                <p class="text-gray-300">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    Rosaspata, Perú
+                </p>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+            <p class="text-gray-400">
+                © 2025 Mentes Brillantes - Colegio Conamir Rosaspata. Todos los derechos reservados.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- Success/Error Messages -->
+<div id="message-container" class="fixed top-4 right-4 z-50"></div>
+
+<!-- Floating Install Button -->
+<div id="floating-install" class="fixed bottom-6 right-6 z-40" style="display: none;">
+    <button id="floating-install-btn"
+        class="bg-purple-600 hover:bg-purple-700 text-white p-4 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300 animate-pulse">
+        <i class="fab fa-android text-xl"></i>
+    </button>
+    <div
+        class="absolute bottom-16 right-0 bg-gray-800 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 hover:opacity-100 transition-opacity">
+        Instalar APK
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
